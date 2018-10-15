@@ -14,7 +14,7 @@ import PackageDescription
 
 let package = Package(
     dependencies: [
-        .package(url: "https://github.com/clmntcrl/Swidux.git", .branch("master")),
+        .package(url: "https://github.com/clmntcrl/swidux.git", .branch("master")),
     ]
 )
 ```
