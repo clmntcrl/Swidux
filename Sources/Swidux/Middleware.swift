@@ -5,9 +5,9 @@ import Foundation
 
 public struct Middleware<AppState> {
 
-    let run: (Store<AppState>) -> (Action) -> Void
+    let run: (Store<AppState>, Action) -> Void
 
-    public init(run: @escaping (Store<AppState>) -> (Action) -> Void) {
+    public init(run: @escaping (Store<AppState>, Action) -> Void) {
         self.run = run
     }
 }

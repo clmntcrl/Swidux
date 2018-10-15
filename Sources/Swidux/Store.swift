@@ -4,11 +4,6 @@
 import Foundation
 
 private let actionDispatchQueue = DispatchQueue(label: "io.clmntcrl.store-action-dispatch-queue", qos: .utility)
-private let middlewareDispatchQueue = DispatchQueue(
-    label: "io.clmntcrl.store-middleware-dispatch-queue",
-    qos: .utility,
-    attributes: .concurrent
-)
 
 public final class Store<AppState> {
 
@@ -53,11 +48,9 @@ public final class Store<AppState> {
     }
 
     public func dispatch(_ action: Action) {
-        // Mutate state using reducer
-        actionDispatchQueue.async { self.reducer.reduce(&self.state, action) }
-        // Dispatch action to middlewares
-        middlewares.forEach { middleware in
-            middlewareDispatchQueue.async { middleware.run(self)(action) }
+        actionDispatchQueue.async {
+            self.reducer.reduce(&self.state, action)
+            self.middlewares.forEach { middleware in middleware.run(self, action) }
         }
     }
 }
