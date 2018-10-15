@@ -73,4 +73,4 @@ let package = Package(
 
 ## License
 
-Swidux is released under the MIT license. See [LICENSE](LICENSE]) for details.
+Swidux is released under the MIT license. See [LICENSE](LICENSE) for details.
