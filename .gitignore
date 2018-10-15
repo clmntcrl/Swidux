@@ -1,0 +1,15 @@
+## Swift Package Manage
+.build/
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+## Xcode proj
+*.xcodeproj
+
+## Various settings
+xcuserdata/
+
+## macOS
+.DS_Store
