@@ -8,11 +8,12 @@ public final class StoreSubscriptionToken {
     private let token: NSObjectProtocol
     private let center: NotificationCenter
 
-    var onDeinit: () -> Void = {}
+    private let onDeinit: () -> Void
 
-    init(token: NSObjectProtocol, center: NotificationCenter = .default) {
+    init(token: NSObjectProtocol, center: NotificationCenter = .default, onDeinit: @escaping () -> Void = {}) {
         self.token = token
         self.center = center
+        self.onDeinit = onDeinit
     }
 
     deinit {

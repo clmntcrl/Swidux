@@ -37,14 +37,15 @@ public final class Store<AppState> {
         // Provide current value to the subscriber for the given KeyPath
         onNext(state[keyPath: keyPath])
         // Reuse subscription if exists
-        let descriptor = subscriptions[keyPath, default: .init(keyPath: keyPath)]
+        let subscription = subscriptions[
+            keyPath,
+            default: .init(keyPath: keyPath) { self.subscriptions.removeValue(forKey: keyPath) }
+        ]
         if case .none = subscriptions[keyPath] {
-            subscriptions[keyPath] = descriptor
+            subscriptions[keyPath] = subscription
         }
         // Subscribe
-        let token = descriptor.subscribe { onNext($0 as! Value) }
-        token.onDeinit = { self.subscriptions.removeValue(forKey: keyPath) }
-        return token
+        return subscription.subscribe { onNext($0 as! Value) }
     }
 
     public func dispatch(_ action: Action) {
