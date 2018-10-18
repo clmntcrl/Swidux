@@ -61,15 +61,45 @@ store.dispatch(CounterAction.decrement)
 
 ## Installation
 
+### [Carthage](https://github.com/Carthage/Carthage)
+
+Add the following dependency to your Cartfile:
+
+```
+github "clmntcrl/swidux" ~> 0.1.0
+```
+
+Then run:
+
+```
+$ carthage update
+```
+
+
+### [SwiftPM](https://github.com/apple/swift-package-manager)
+
+Add package as dependency:
+
 ```swift
 import PackageDescription
 
 let package = Package(
+    name: "AwesomeProjectName",
     dependencies: [
         .package(url: "https://github.com/clmntcrl/swidux.git", .branch("master")),
+    ],
+    targets: [
+        .target(name: "AwesomeProjectName", dependencies: ["Swidux"])
     ]
 )
 ```
+
+Then run:
+
+```
+$ swift build
+```
+
 
 ## License
 
