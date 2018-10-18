@@ -86,7 +86,7 @@ import PackageDescription
 let package = Package(
     name: "AwesomeProjectName",
     dependencies: [
-        .package(url: "https://github.com/clmntcrl/swidux.git", .branch("master")),
+        .package(url: "https://github.com/clmntcrl/swidux.git", from: "0.1.0"),
     ],
     targets: [
         .target(name: "AwesomeProjectName", dependencies: ["Swidux"])
