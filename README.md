@@ -59,6 +59,40 @@ store.dispatch(CounterAction.increment)
 store.dispatch(CounterAction.decrement)
 ```
 
+## Discussion
+
+### Reducers
+
+`Reducers` use `inout state` to improve performances. This has a major drawback, the consistency of the state is no longer guaranteed by the reducer but is the responsibility of the developer. Let's take the following example:
+
+```swift
+struct AppState {
+    var tasks: [Id<Task>: Task] = [:]
+    var todaysTasksIds: [Id<Task>] = []
+}
+
+let reducer = Reducer<AppState> { state, action in
+    switch action {
+    case TaskAction.create(let title):
+        let task = Task(title: title)
+        state.todaysTasksIds += [task.id] // ← ‼️ Inconsistent state
+        state.tasks[task.id] = task
+    default: break
+    }
+}
+```
+
+Each mutation of the application state trigger the notification of susbscribers (if the value they have subscribed change). So if someone subscribe to `\.todaysTasksIds` changes to generate a list of a today's task list like bellow:
+
+```swift
+let token = store.subscribe(\.todaysTasksIds) { todaysTasksIds in 
+    let todaysTasks = todaysTasksIds.map { store.state.tasks[$0] }
+    // ...
+}
+```
+
+The inconsistency of the state _could_ crash the application because `state.tasks` has not yet been updated (this is not certain because subscribers notifications rely on an async dispatch that makes code execution order unpredictable).
+
 ## Installation
 
 ### [Carthage](https://github.com/Carthage/Carthage)
