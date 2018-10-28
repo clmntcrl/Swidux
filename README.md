@@ -59,7 +59,11 @@ store.dispatch(CounterAction.increment)
 store.dispatch(CounterAction.decrement)
 ```
 
-## Discussion
+## Discussions
+
+### AppState
+
+Application state must be a value type because Swidux store rely on `didSet` observer to notify subscribers of state changes.
 
 ### Reducers
 
