@@ -93,6 +93,8 @@ let token = store.subscribe(\.todaysTasksIds) { todaysTasksIds in
 
 The inconsistency of the state _could_ crash the application because `state.tasks` has not yet been updated (this is not certain because subscribers notifications rely on an async dispatch that makes code execution order unpredictable).
 
+In the above example, inverting `state.todaysTasksIds += [task.id]` and `state.tasks[task.id] = task` lines fix state inconsistency. Sometimes it could be harder to keep things consitent if reducing action mutates lot of state properties. For those cases the use of `mutating func` is helpful because `didSet` observer will only be call after the execution this function.
+
 ## Installation
 
 ### [Carthage](https://github.com/Carthage/Carthage)
