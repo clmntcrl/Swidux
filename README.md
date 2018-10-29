@@ -67,7 +67,9 @@ Application state must be a value type because Swidux store rely on `didSet` obs
 
 ### Reducers
 
-`Reducers` use `inout state` to improve performances. This has a major drawback, the consistency of the state is no longer guaranteed by the reducer but is the responsibility of the developer. Let's take the following example:
+Reducers use `inout State` to improve performances. This has a major drawback, the consistency of the state is no longer guaranteed by the reducer but is the responsibility of the developer. It would be if reduce type was `(State, Action) -> State` but at the cost of `State` copies. 
+
+Let's take the following example:
 
 ```swift
 struct AppState {
