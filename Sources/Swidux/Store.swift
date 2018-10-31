@@ -9,7 +9,7 @@ public final class Store<AppState> {
 
     private var subscriptions = [PartialKeyPath<AppState>: StoreSubscription]()
 
-    public var state: AppState {
+    public private(set) var state: AppState {
         didSet {
             subscriptions.forEach { kp, subscription in
                 let update = StateUpdate(oldState: oldValue[keyPath: kp], state: self.state[keyPath: kp])
