@@ -108,7 +108,7 @@ In the above example, inverting `state.todaysTasksIds += [task.id]` and `state.t
 Add the following dependency to your Cartfile:
 
 ```
-github "clmntcrl/swidux" ~> 0.1.0
+github "clmntcrl/swidux" ~> 0.1.1
 ```
 
 ```
@@ -126,7 +126,7 @@ import PackageDescription
 let package = Package(
     name: "AwesomeProjectName",
     dependencies: [
-        .package(url: "https://github.com/clmntcrl/swidux.git", from: "0.1.0"),
+        .package(url: "https://github.com/clmntcrl/swidux.git", from: "0.1.1"),
     ],
     targets: [
         .target(name: "AwesomeProjectName", dependencies: ["Swidux"])
