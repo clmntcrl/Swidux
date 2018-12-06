@@ -5,7 +5,7 @@ import Foundation
 
 public struct Reducer<State> {
 
-    let reduce: (inout State, Action) -> Void
+    public let reduce: (inout State, Action) -> Void
 
     public init(reduce: @escaping (inout State, Action) -> Void) {
         self.reduce = reduce
