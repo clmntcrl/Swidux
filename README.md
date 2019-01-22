@@ -69,43 +69,6 @@ Application state must be a value type because Swidux store rely on `didSet` obs
 
 Reducers use `(inout State, Action) -> Void` signature (instead of `(State, Action) -> State`) to improve performances and avoid lot of `State` copies.
 
-## Installation
-
-### [Carthage](https://github.com/Carthage/Carthage)
-
-Add the following dependency to your Cartfile:
-
-```
-github "clmntcrl/swidux" ~> 0.1.1
-```
-
-```
-$ carthage update
-```
-
-
-### [SwiftPM](https://github.com/apple/swift-package-manager)
-
-Add package as dependency:
-
-```swift
-import PackageDescription
-
-let package = Package(
-    name: "AwesomeProjectName",
-    dependencies: [
-        .package(url: "https://github.com/clmntcrl/swidux.git", from: "0.1.1"),
-    ],
-    targets: [
-        .target(name: "AwesomeProjectName", dependencies: ["Swidux"])
-    ]
-)
-```
-
-```
-$ swift build
-```
-
 
 ## License
 

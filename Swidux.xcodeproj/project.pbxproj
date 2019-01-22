@@ -3,164 +3,140 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		"Swidux::SwiduxPackageTests::ProductTarget" /* SwiduxPackageTests */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_45 /* Build configuration list for PBXAggregateTarget "SwiduxPackageTests" */;
-			buildPhases = (
-			);
-			dependencies = (
-				OBJ_48 /* PBXTargetDependency */,
-			);
-			name = SwiduxPackageTests;
-			productName = SwiduxPackageTests;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		FC07B75721749EC600D1AEDC /* SwiduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC07B75521749EA300D1AEDC /* SwiduxTests.swift */; };
-		OBJ_30 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Action.swift */; };
-		OBJ_31 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Middleware.swift */; };
-		OBJ_32 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Reducer.swift */; };
-		OBJ_33 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Store.swift */; };
-		OBJ_34 /* StateUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* StateUpdate.swift */; };
-		OBJ_35 /* StoreSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* StoreSubscription.swift */; };
-		OBJ_36 /* StoreSubscriptionToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* StoreSubscriptionToken.swift */; };
-		OBJ_43 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_57 /* Swidux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Swidux::Swidux::Product" /* Swidux.framework */; };
+		FC3FE5BB21F7C0D6009CA663 /* Swidux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3FE5B121F7C0D6009CA663 /* Swidux.framework */; };
+		FC3FE5C021F7C0D6009CA663 /* SwiduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FE5BF21F7C0D6009CA663 /* SwiduxTests.swift */; };
+		FC3FE5C221F7C0D6009CA663 /* Swidux.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3FE5B421F7C0D6009CA663 /* Swidux.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC3FE5E221F7C166009CA663 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FE5DA21F7C166009CA663 /* Store.swift */; };
+		FC3FE5E321F7C166009CA663 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FE5DB21F7C166009CA663 /* Reducer.swift */; };
+		FC3FE5E421F7C166009CA663 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FE5DC21F7C166009CA663 /* Middleware.swift */; };
+		FC3FE5E521F7C166009CA663 /* StoreSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FE5DE21F7C166009CA663 /* StoreSubscription.swift */; };
+		FC3FE5E621F7C166009CA663 /* StoreSubscriptionToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FE5DF21F7C166009CA663 /* StoreSubscriptionToken.swift */; };
+		FC3FE5E721F7C166009CA663 /* StateUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FE5E021F7C166009CA663 /* StateUpdate.swift */; };
+		FC3FE5E821F7C166009CA663 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3FE5E121F7C166009CA663 /* Action.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FCAE6C6E21711D30002942B7 /* PBXContainerItemProxy */ = {
+		FC3FE5BC21F7C0D6009CA663 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
+			containerPortal = FC3FE5A821F7C0D6009CA663 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = "Swidux::Swidux";
+			remoteGlobalIDString = FC3FE5B021F7C0D6009CA663;
 			remoteInfo = Swidux;
-		};
-		FCAE6C6F21711D32002942B7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Swidux::SwiduxTests";
-			remoteInfo = SwiduxTests;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FC07B75521749EA300D1AEDC /* SwiduxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiduxTests.swift; sourceTree = "<group>"; };
-		OBJ_10 /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
-		OBJ_11 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
-		OBJ_12 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		OBJ_14 /* StateUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateUpdate.swift; sourceTree = "<group>"; };
-		OBJ_15 /* StoreSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSubscription.swift; sourceTree = "<group>"; };
-		OBJ_16 /* StoreSubscriptionToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSubscriptionToken.swift; sourceTree = "<group>"; };
-		OBJ_21 /* Swidux.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = Swidux.xcworkspace; sourceTree = SOURCE_ROOT; };
-		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
-		"Swidux::Swidux::Product" /* Swidux.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Swidux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Swidux::SwiduxTests::Product" /* SwiduxTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiduxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3FE5B121F7C0D6009CA663 /* Swidux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swidux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3FE5B421F7C0D6009CA663 /* Swidux.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swidux.h; sourceTree = "<group>"; };
+		FC3FE5B521F7C0D6009CA663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC3FE5BA21F7C0D6009CA663 /* SwiduxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiduxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3FE5BF21F7C0D6009CA663 /* SwiduxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiduxTests.swift; sourceTree = "<group>"; };
+		FC3FE5C121F7C0D6009CA663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC3FE5DA21F7C166009CA663 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		FC3FE5DB21F7C166009CA663 /* Reducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		FC3FE5DC21F7C166009CA663 /* Middleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
+		FC3FE5DE21F7C166009CA663 /* StoreSubscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreSubscription.swift; sourceTree = "<group>"; };
+		FC3FE5DF21F7C166009CA663 /* StoreSubscriptionToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreSubscriptionToken.swift; sourceTree = "<group>"; };
+		FC3FE5E021F7C166009CA663 /* StateUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateUpdate.swift; sourceTree = "<group>"; };
+		FC3FE5E121F7C166009CA663 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_37 /* Frameworks */ = {
+		FC3FE5AE21F7C0D6009CA663 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
+			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_56 /* Frameworks */ = {
+		FC3FE5B721F7C0D6009CA663 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
+			buildActionMask = 2147483647;
 			files = (
-				OBJ_57 /* Swidux.framework in Frameworks */,
+				FC3FE5BB21F7C0D6009CA663 /* Swidux.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_13 /* StoreSubscription */ = {
+		FC3FE5A721F7C0D6009CA663 = {
 			isa = PBXGroup;
 			children = (
-				OBJ_14 /* StateUpdate.swift */,
-				OBJ_15 /* StoreSubscription.swift */,
-				OBJ_16 /* StoreSubscriptionToken.swift */,
+				FC3FE5B321F7C0D6009CA663 /* Sources */,
+				FC3FE5BE21F7C0D6009CA663 /* Tests */,
+				FC3FE5B221F7C0D6009CA663 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC3FE5B221F7C0D6009CA663 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC3FE5B121F7C0D6009CA663 /* Swidux.framework */,
+				FC3FE5BA21F7C0D6009CA663 /* SwiduxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC3FE5B321F7C0D6009CA663 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FC3FE5B521F7C0D6009CA663 /* Info.plist */,
+				FC3FE5B421F7C0D6009CA663 /* Swidux.h */,
+				FC3FE5E121F7C166009CA663 /* Action.swift */,
+				FC3FE5DC21F7C166009CA663 /* Middleware.swift */,
+				FC3FE5DB21F7C166009CA663 /* Reducer.swift */,
+				FC3FE5DA21F7C166009CA663 /* Store.swift */,
+				FC3FE5DD21F7C166009CA663 /* StoreSubscription */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FC3FE5BE21F7C0D6009CA663 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FC3FE5C121F7C0D6009CA663 /* Info.plist */,
+				FC3FE5BF21F7C0D6009CA663 /* SwiduxTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		FC3FE5DD21F7C166009CA663 /* StoreSubscription */ = {
+			isa = PBXGroup;
+			children = (
+				FC3FE5DE21F7C166009CA663 /* StoreSubscription.swift */,
+				FC3FE5DF21F7C166009CA663 /* StoreSubscriptionToken.swift */,
+				FC3FE5E021F7C166009CA663 /* StateUpdate.swift */,
 			);
 			path = StoreSubscription;
 			sourceTree = "<group>";
 		};
-		OBJ_17 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_18 /* SwiduxTests */,
-			);
-			name = Tests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_18 /* SwiduxTests */ = {
-			isa = PBXGroup;
-			children = (
-				FC07B75521749EA300D1AEDC /* SwiduxTests.swift */,
-			);
-			name = SwiduxTests;
-			path = Tests/SwiduxTests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_22 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				"Swidux::Swidux::Product" /* Swidux.framework */,
-				"Swidux::SwiduxTests::Product" /* SwiduxTests.xctest */,
-			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		OBJ_5 = {
-			isa = PBXGroup;
-			children = (
-				OBJ_6 /* Package.swift */,
-				OBJ_7 /* Sources */,
-				OBJ_17 /* Tests */,
-				OBJ_21 /* Swidux.xcworkspace */,
-				OBJ_22 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		OBJ_7 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_8 /* Swidux */,
-			);
-			name = Sources;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_8 /* Swidux */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_13 /* StoreSubscription */,
-				OBJ_9 /* Action.swift */,
-				OBJ_10 /* Middleware.swift */,
-				OBJ_11 /* Reducer.swift */,
-				OBJ_12 /* Store.swift */,
-			);
-			name = Swidux;
-			path = Sources/Swidux;
-			sourceTree = SOURCE_ROOT;
-		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		FC3FE5AC21F7C0D6009CA663 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3FE5C221F7C0D6009CA663 /* Swidux.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		"Swidux::Swidux" /* Swidux */ = {
+		FC3FE5B021F7C0D6009CA663 /* Swidux */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_26 /* Build configuration list for PBXNativeTarget "Swidux" */;
+			buildConfigurationList = FC3FE5C521F7C0D6009CA663 /* Build configuration list for PBXNativeTarget "Swidux" */;
 			buildPhases = (
-				OBJ_29 /* Sources */,
-				OBJ_37 /* Frameworks */,
+				FC3FE5AC21F7C0D6009CA663 /* Headers */,
+				FC3FE5AD21F7C0D6009CA663 /* Sources */,
+				FC3FE5AE21F7C0D6009CA663 /* Frameworks */,
+				FC3FE5AF21F7C0D6009CA663 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -168,330 +144,359 @@
 			);
 			name = Swidux;
 			productName = Swidux;
-			productReference = "Swidux::Swidux::Product" /* Swidux.framework */;
+			productReference = FC3FE5B121F7C0D6009CA663 /* Swidux.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		"Swidux::SwiduxTests" /* SwiduxTests */ = {
+		FC3FE5B921F7C0D6009CA663 /* SwiduxTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_50 /* Build configuration list for PBXNativeTarget "SwiduxTests" */;
+			buildConfigurationList = FC3FE5C821F7C0D6009CA663 /* Build configuration list for PBXNativeTarget "SwiduxTests" */;
 			buildPhases = (
-				OBJ_53 /* Sources */,
-				OBJ_56 /* Frameworks */,
+				FC3FE5B621F7C0D6009CA663 /* Sources */,
+				FC3FE5B721F7C0D6009CA663 /* Frameworks */,
+				FC3FE5B821F7C0D6009CA663 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_58 /* PBXTargetDependency */,
+				FC3FE5BD21F7C0D6009CA663 /* PBXTargetDependency */,
 			);
 			name = SwiduxTests;
 			productName = SwiduxTests;
-			productReference = "Swidux::SwiduxTests::Product" /* SwiduxTests.xctest */;
+			productReference = FC3FE5BA21F7C0D6009CA663 /* SwiduxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		"Swidux::SwiftPMPackageDescription" /* SwiduxPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_39 /* Build configuration list for PBXNativeTarget "SwiduxPackageDescription" */;
-			buildPhases = (
-				OBJ_42 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiduxPackageDescription;
-			productName = SwiduxPackageDescription;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		OBJ_1 /* Project object */ = {
+		FC3FE5A821F7C0D6009CA663 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 9999;
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = clmntcrl;
+				TargetAttributes = {
+					FC3FE5B021F7C0D6009CA663 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					FC3FE5B921F7C0D6009CA663 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
 			};
-			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Swidux" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = FC3FE5AB21F7C0D6009CA663 /* Build configuration list for PBXProject "Swidux" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5;
-			productRefGroup = OBJ_22 /* Products */;
+			mainGroup = FC3FE5A721F7C0D6009CA663;
+			productRefGroup = FC3FE5B221F7C0D6009CA663 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"Swidux::Swidux" /* Swidux */,
-				"Swidux::SwiftPMPackageDescription" /* SwiduxPackageDescription */,
-				"Swidux::SwiduxPackageTests::ProductTarget" /* SwiduxPackageTests */,
-				"Swidux::SwiduxTests" /* SwiduxTests */,
+				FC3FE5B021F7C0D6009CA663 /* Swidux */,
+				FC3FE5B921F7C0D6009CA663 /* SwiduxTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		FC3FE5AF21F7C0D6009CA663 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC3FE5B821F7C0D6009CA663 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_29 /* Sources */ = {
+		FC3FE5AD21F7C0D6009CA663 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
+			buildActionMask = 2147483647;
 			files = (
-				OBJ_30 /* Action.swift in Sources */,
-				OBJ_31 /* Middleware.swift in Sources */,
-				OBJ_32 /* Reducer.swift in Sources */,
-				OBJ_33 /* Store.swift in Sources */,
-				OBJ_34 /* StateUpdate.swift in Sources */,
-				OBJ_35 /* StoreSubscription.swift in Sources */,
-				OBJ_36 /* StoreSubscriptionToken.swift in Sources */,
+				FC3FE5E521F7C166009CA663 /* StoreSubscription.swift in Sources */,
+				FC3FE5E421F7C166009CA663 /* Middleware.swift in Sources */,
+				FC3FE5E721F7C166009CA663 /* StateUpdate.swift in Sources */,
+				FC3FE5E321F7C166009CA663 /* Reducer.swift in Sources */,
+				FC3FE5E821F7C166009CA663 /* Action.swift in Sources */,
+				FC3FE5E221F7C166009CA663 /* Store.swift in Sources */,
+				FC3FE5E621F7C166009CA663 /* StoreSubscriptionToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_42 /* Sources */ = {
+		FC3FE5B621F7C0D6009CA663 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
+			buildActionMask = 2147483647;
 			files = (
-				OBJ_43 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_53 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				FC07B75721749EC600D1AEDC /* SwiduxTests.swift in Sources */,
+				FC3FE5C021F7C0D6009CA663 /* SwiduxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_48 /* PBXTargetDependency */ = {
+		FC3FE5BD21F7C0D6009CA663 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "Swidux::SwiduxTests" /* SwiduxTests */;
-			targetProxy = FCAE6C6F21711D32002942B7 /* PBXContainerItemProxy */;
-		};
-		OBJ_58 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Swidux::Swidux" /* Swidux */;
-			targetProxy = FCAE6C6E21711D30002942B7 /* PBXContainerItemProxy */;
+			target = FC3FE5B021F7C0D6009CA663 /* Swidux */;
+			targetProxy = FC3FE5BC21F7C0D6009CA663 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_27 /* Debug */ = {
+		FC3FE5C321F7C0D6009CA663 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Swidux.xcodeproj/Swidux_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Swidux;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.2;
-				TARGET_NAME = Swidux;
-			};
-			name = Debug;
-		};
-		OBJ_28 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Swidux.xcodeproj/Swidux_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Swidux;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.2;
-				TARGET_NAME = Swidux;
-			};
-			name = Release;
-		};
-		OBJ_3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE DEBUG";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				USE_HEADERMAP = NO;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		OBJ_4 /* Release */ = {
+		FC3FE5C421F7C0D6009CA663 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FC3FE5C621F7C0D6009CA663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W624386YMM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_OPTIMIZATION_LEVEL = s;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.clmntcrl.Swidux;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC3FE5C721F7C0D6009CA663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W624386YMM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.clmntcrl.Swidux;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC3FE5C921F7C0D6009CA663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W624386YMM;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.clmntcrl.SwiduxTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				USE_HEADERMAP = NO;
-			};
-			name = Release;
-		};
-		OBJ_40 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
 				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		OBJ_41 /* Release */ = {
+		FC3FE5CA21F7C0D6009CA663 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 4.2;
-			};
-			name = Release;
-		};
-		OBJ_46 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		OBJ_47 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		OBJ_51 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W624386YMM;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Swidux.xcodeproj/SwiduxTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.clmntcrl.SwiduxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGET_NAME = SwiduxTests;
-			};
-			name = Debug;
-		};
-		OBJ_52 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Swidux.xcodeproj/SwiduxTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.2;
-				TARGET_NAME = SwiduxTests;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_2 /* Build configuration list for PBXProject "Swidux" */ = {
+		FC3FE5AB21F7C0D6009CA663 /* Build configuration list for PBXProject "Swidux" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_3 /* Debug */,
-				OBJ_4 /* Release */,
+				FC3FE5C321F7C0D6009CA663 /* Debug */,
+				FC3FE5C421F7C0D6009CA663 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_26 /* Build configuration list for PBXNativeTarget "Swidux" */ = {
+		FC3FE5C521F7C0D6009CA663 /* Build configuration list for PBXNativeTarget "Swidux" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_27 /* Debug */,
-				OBJ_28 /* Release */,
+				FC3FE5C621F7C0D6009CA663 /* Debug */,
+				FC3FE5C721F7C0D6009CA663 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_39 /* Build configuration list for PBXNativeTarget "SwiduxPackageDescription" */ = {
+		FC3FE5C821F7C0D6009CA663 /* Build configuration list for PBXNativeTarget "SwiduxTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_40 /* Debug */,
-				OBJ_41 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_45 /* Build configuration list for PBXAggregateTarget "SwiduxPackageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_46 /* Debug */,
-				OBJ_47 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_50 /* Build configuration list for PBXNativeTarget "SwiduxTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_51 /* Debug */,
-				OBJ_52 /* Release */,
+				FC3FE5C921F7C0D6009CA663 /* Debug */,
+				FC3FE5CA21F7C0D6009CA663 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = OBJ_1 /* Project object */;
+	rootObject = FC3FE5A821F7C0D6009CA663 /* Project object */;
 }
