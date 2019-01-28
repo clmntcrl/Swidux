@@ -54,8 +54,8 @@ extension StoreSubscription {
 
         self.next = {
             let update = $0.map { $0 as! Value }
-            guard update.state != update.oldState else { return }
-            center.post(Notification(name: name, object: nil, userInfo: [ "payload": $0.state ]))
+            guard update.nexState != update.prevState else { return }
+            center.post(Notification(name: name, object: nil, userInfo: [ "payload": $0.nexState ]))
         }
     }
 }

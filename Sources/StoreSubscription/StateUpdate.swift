@@ -5,16 +5,16 @@ import Foundation
 
 struct StateUpdate<A> {
 
-    let oldState: A
-    let state: A
+    let prevState: A
+    let nexState: A
 }
 
 extension StateUpdate {
 
     func map<B>(_ transform: (A) -> B) -> StateUpdate<B> {
         return StateUpdate<B>(
-            oldState: transform(oldState),
-            state: transform(state)
+            prevState: transform(prevState),
+            nexState: transform(nexState)
         )
     }
 }

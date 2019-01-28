@@ -12,8 +12,12 @@ public final class Store<AppState> {
     public private(set) var state: AppState {
         didSet {
             subscriptions.forEach { kp, subscription in
-                let update = StateUpdate(oldState: oldValue[keyPath: kp], state: self.state[keyPath: kp])
-                DispatchQueue.main.async { subscription.next(update) }
+                DispatchQueue.main.async {
+                    subscription.next(.init(
+                        prevState: oldValue[keyPath: kp],
+                        nexState: self.state[keyPath: kp]
+                    ))
+                }
             }
         }
     }
