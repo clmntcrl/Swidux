@@ -3,43 +3,57 @@
 
 import Foundation
 
-private let actionDispatchQueue = DispatchQueue(label: "io.clmntcrl.store-action-dispatch-queue", qos: .utility)
+private let swiduxQueue = DispatchQueue(
+    label: "io.clmntcrl.swidux",
+    qos: .utility,
+    attributes: .concurrent
+)
 
 public final class Store<AppState> {
 
     private var subscriptions = [PartialKeyPath<AppState>: StoreSubscription]()
 
-    public private(set) var state: AppState {
+    private var state: AppState {
         didSet {
             subscriptions.forEach { kp, subscription in
                 DispatchQueue.main.async {
                     subscription.next(.init(
                         prevState: oldValue[keyPath: kp],
-                        nexState: self.state[keyPath: kp]
+                        nexState: self.getState()[keyPath: kp]
                     ))
                 }
             }
         }
     }
-    public let reducer: Reducer<AppState>
-    public let middlewares: [Middleware<AppState>]
+    private let reducer: Reducer<AppState>
+    private let middlewares: [Middleware<AppState>]
+
+    // MARK: - Init
 
     public init(
         initialState: AppState,
         reducer: Reducer<AppState> = .init { _,_  in },
         middlewares: [Middleware<AppState>] = []
     ) {
+
         self.state = initialState
         self.reducer = reducer
         self.middlewares = middlewares
+    }
+
+    // MARK: - Public API
+
+    public func getState() -> AppState {
+        return swiduxQueue.sync { self.state }
     }
 
     public func subscribe<Value: Equatable>(
         _ keyPath: KeyPath<AppState, Value>,
         onNext: @escaping (Value) -> Void
     ) -> StoreSubscriptionToken {
+
         // Provide current value to the subscriber for the given KeyPath
-        onNext(state[keyPath: keyPath])
+        onNext(getState()[keyPath: keyPath])
         // Reuse subscription if exists
         let subscription = subscriptions[
             keyPath,
@@ -53,7 +67,7 @@ public final class Store<AppState> {
     }
 
     public func dispatch(_ action: Action) {
-        actionDispatchQueue.async {
+        swiduxQueue.sync(flags: .barrier) {
             self.reducer.reduce(&self.state, action)
             self.middlewares.forEach { middleware in middleware.run(self, action) }
         }
