@@ -28,7 +28,11 @@ public final class Store<AppState> {
     private let reducer: Reducer<AppState>
     private let middlewares: [Middleware<AppState>]
 
-    // MARK: - Init
+    // MARK: -
+
+    public private(set) lazy var dispatch: (Action) -> Void = { action in
+        swiduxQueue.sync(flags: .barrier) { self.reducer.reduce(&self.state, action) }
+    }
 
     public init(
         initialState: AppState,
@@ -39,9 +43,12 @@ public final class Store<AppState> {
         self.state = initialState
         self.reducer = reducer
         self.middlewares = middlewares
-    }
 
-    // MARK: - Public API
+        // Wrap default dispatch implementation with middlewares
+        self.dispatch = middlewares.reduce(self.dispatch) { dispatch, middleware in
+            middleware.run(self)(dispatch)
+        }
+    }
 
     public func getState() -> AppState {
         return swiduxQueue.sync { self.state }
@@ -67,12 +74,5 @@ public final class Store<AppState> {
         }
         // Subscribe
         return subscription.subscribe { onNext($0 as! Value) }
-    }
-
-    public func dispatch(_ action: Action) {
-        swiduxQueue.sync(flags: .barrier) {
-            self.reducer.reduce(&self.state, action)
-            self.middlewares.forEach { middleware in middleware.run(self, action) }
-        }
     }
 }
