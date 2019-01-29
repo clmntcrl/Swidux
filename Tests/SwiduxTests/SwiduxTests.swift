@@ -56,3 +56,13 @@ class SwiduxTests: XCTestCase {
         XCTAssertEqual(store.getState().count, 0)
     }
 }
+
+#if os(Linux)
+extension SwiduxTests {
+    static var allTests : [(String, (SnapshotTestingTests) -> () throws -> Void)] {
+        return [
+            ("testThatSwiduxStoreIsThreadSafe", testThatSwiduxStoreIsThreadSafe),
+        ]
+    }
+}
+#endif
