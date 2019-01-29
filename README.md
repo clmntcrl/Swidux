@@ -69,6 +69,13 @@ Application state must be a value type because Swidux store rely on `didSet` obs
 
 Reducers use `(inout State, Action) -> Void` signature (instead of `(State, Action) -> State`) to improve performances and avoid lot of `State` copies.
 
+### Middleware
+
+Middlewares allow to extend swidux architecture. They they are able to act before and after reducers and could be used to handle a wide variety of problems like logging, handling asynchronous actions, ...
+
+Internaly, each middle get a dispatch function as parameter (plus the store to be able to get state) and return a wrapped one which will be used by the next middleware and finally by the swidux store.
+<br />Because of this you should take care of the order of the middlewares. A middleware could, for example, decide to don't propagate certain actions to the dispacth function (perhaps because these actions are only useful for its operation). If your middlewares contain a logger, these actions will be logged or not according to the order of the middlewares.
+
 
 ## License
 
