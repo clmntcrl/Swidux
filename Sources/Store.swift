@@ -57,7 +57,10 @@ public final class Store<AppState> {
         // Reuse subscription if exists
         let subscription = subscriptions[
             keyPath,
-            default: .init(keyPath: keyPath) { self.subscriptions.removeValue(forKey: keyPath) }
+            default: .init(
+                keyPath: keyPath,
+                onSubscriberCounterDropsToZero: { self.subscriptions.removeValue(forKey: keyPath) }
+            )
         ]
         if case .none = subscriptions[keyPath] {
             subscriptions[keyPath] = subscription
