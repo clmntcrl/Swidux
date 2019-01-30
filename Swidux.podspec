@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Swidux"
-  s.version      = "1.0"
+  s.version      = "1.0.0"
   s.summary      = "Swift unidirectional data flow inspired by redux."
 
   s.homepage     = "https://github.com/clmntcrl/swidux"
