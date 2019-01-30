@@ -78,7 +78,7 @@ Internaly, each middle get a dispatch function as parameter (plus the store to b
 
 Add the following dependency to your `Cartfile`:
 
-```
+```ruby
 github "clmntcrl/swidux" ~> 1.0
 ```
 
@@ -86,7 +86,7 @@ github "clmntcrl/swidux" ~> 1.0
 
 Add the following pod to your `Podfile`:
 
-```
+```ruby
 pod 'Swidux', '~> 1.0'
 ```
 
