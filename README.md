@@ -2,10 +2,6 @@
 
 Swift unidirectional data flow inspired by redux.
 
-## Stability
-
-This library should be considered alpha, and not stable. Breaking changes will happen often.
-
 ## Usage
 
 Define your application state,
@@ -83,7 +79,7 @@ Internaly, each middle get a dispatch function as parameter (plus the store to b
 Add the following dependency to your Cartfile:        
 
 ```        
-github "clmntcrl/swidux" ~> 0.1.1        
+github "clmntcrl/swidux" ~> 1.0        
 ```        
 
 ```        
@@ -95,13 +91,13 @@ $ carthage update
 
 Add package as dependency:        
 
-```swift        
+```swift
 import PackageDescription        
 
 let package = Package(        
     name: "AwesomeProjectName",        
     dependencies: [        
-        .package(url: "https://github.com/clmntcrl/swidux.git", from: "0.1.1"),        
+        .package(url: "https://github.com/clmntcrl/swidux.git", from: "1.0"),        
     ],        
     targets: [        
         .target(name: "AwesomeProjectName", dependencies: ["Swidux"])        
