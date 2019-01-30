@@ -76,6 +76,42 @@ Middlewares allow to extend swidux architecture. They they are able to act befor
 Internaly, each middle get a dispatch function as parameter (plus the store to be able to get state) and return a wrapped one which will be used by the next middleware and finally by the swidux store.
 <br />Because of this you should take care of the order of the middlewares. A middleware could, for example, decide to don't propagate certain actions to the dispacth function (perhaps because these actions are only useful for its operation). If your middlewares contain a logger, these actions will be logged or not according to the order of the middlewares.
 
+## Installation        
+
+### [Carthage](https://github.com/Carthage/Carthage)        
+
+Add the following dependency to your Cartfile:        
+
+```        
+github "clmntcrl/swidux" ~> 0.1.1        
+```        
+
+```        
+$ carthage update        
+```        
+
+
+### [SwiftPM](https://github.com/apple/swift-package-manager)        
+
+Add package as dependency:        
+
+```swift        
+import PackageDescription        
+
+let package = Package(        
+    name: "AwesomeProjectName",        
+    dependencies: [        
+        .package(url: "https://github.com/clmntcrl/swidux.git", from: "0.1.1"),        
+    ],        
+    targets: [        
+        .target(name: "AwesomeProjectName", dependencies: ["Swidux"])        
+    ]        
+)        
+```        
+
+```        
+$ swift build        
+```        
 
 ## License
 
