@@ -96,7 +96,7 @@ Add the package as dependency in your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/clmntcrl/swidux.git", from: "1.0"),
+    .package(url: "https://github.com/clmntcrl/swidux.git", from: "1.0.0"),
 ]
 ```
 
