@@ -214,9 +214,9 @@
 				430BFE5199E3144F502AF4447E319486 /* Tests */,
 				06221CD1AFAEE9C7808A76C297648CC6 /* Products */,
 			);
-			indentWidth = 2;
+			indentWidth = 4;
 			sourceTree = "<group>";
-			tabWidth = 2;
+			tabWidth = 4;
 			usesTabs = 0;
 		};
 /* End PBXGroup section */
